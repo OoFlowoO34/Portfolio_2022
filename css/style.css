@@ -1,0 +1,192 @@
+*, html {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:#fcfcfc;
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    ;
+}
+
+
+/*Typographie*/
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: black;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 24px;
+    font-weight: 600;
+    color:black;
+}
+h2{
+    position: absolute;
+    background-color: #ebebeb;
+    padding: 12px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+.text-little-grey{
+   font-size: medium;
+   color: grey;
+}
+
+/* Mise en page */
+#stocks{
+    background-image: url("../images/Capture-crypto.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#bootstrap{
+    background-image: url("../images/Capture-sfei.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.btn-web{
+    filter: grayscale(75%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+} 
+
+.btn-web:hover{
+    filter: grayscale(0%);
+    transition: all ease-in-out 200ms; 
+}
+
+.btn-web:hover h2{
+    position: absolute;
+    transform: translateY(-99px);
+    opacity: 1;
+    transition: all ease-in-out 200ms;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+header{
+    padding: 24px;
+    background-color: #ebebeb;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+
+#menu{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu > a{
+    margin: 24px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    width: 80%;
+    padding: 0px;
+    transition: all ease-in-out 200ms;
+    overflow: hidden;
+}
+
+
+#stocks > p{
+    width: 100%;
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+    padding: 24px;
+
+}
+#stocks:hover > p{
+    width: 100%;
+    background-color: #ebebebca;
+    position: absolute;
+    transform: translateY(99px);
+    opacity: 1;
+    transition: all ease-in-out 200ms;
+}
+
+
+#bootstrap > p{
+    width: 100%;
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+    padding: 24px;
+
+}
+#bootstrap:hover > p{
+    width: 100%;
+    background-color: #ebebebca;
+    position: absolute;
+    transform: translateY(99px);
+    opacity: 1;
+    transition: all ease-in-out 200ms;
+}
+
+/* Style */
+
+.btn{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color:white;
+    padding: 12px;
+    
+}
+.btn:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color:white;
+    padding: 12px;
+}
+
+#img-florian-batt{
+    border-radius: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header{
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    #menu{
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
