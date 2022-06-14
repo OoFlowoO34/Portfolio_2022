@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -15,31 +18,53 @@
             <img id="img-florian-batt"src="images/Florian-Batt.jpeg" alt="">
         </div>
         <h1>Florian Batt <span class="text-little-grey"> - Web Developer</span></h1>
-        <div id="contacter">
-            <a href="#" class="btn"><span>Contacter</span></a>
+        <div class="contacter">
+            <a  href="mailto:florian.batt@hotmail.fr?" class="btn"><span>Contacter par e-mail</span></a>
+            <a href ="sms:+33674142934" class="btn"><span>Contacter par SMS</span></a>
         </div>      
     </header>
 
 
     <main>
         <div id="menu">
-            <!-- Bourse -->
+
+            <!-- Stocks -->
             
-                <a id="stocks" href="https://ooflowoo34.github.io/Cryptos-stocks/" class="btn-web" target="_blank">
-                    <h2>Stocks & Cryptos</h2>
-                    <p>Blog using Directus ( cryptos and stocks portfolios, articles, twitter timeline )</p>
+                <a id="stocks" href="https://ooflowoo34.github.io/Cryptos-stocks/" class="btn-web scroll-out" target="_blank">
+                    <h2 class="scroll-out-h2">Stocks & Cryptos</h2>
+                    <p class="scroll-out-p">Blog using Directus ( cryptos and stocks portfolios, articles, twitter timeline )</p>
                 </a> 
             
 
-            <!-- Crypto -->
+            <!-- bootstrap -->
 
-                <a id="bootstrap" href="https://ooflowoo34.github.io/Bootstrap-Project/" class="btn-web" class="btn-web">
-                    <h2>BootStrap</h2>
-                    <p>Showcase site using Bootstrap and keen-slider</p> 
-                </a>    
+                <a id="bootstrap" href="https://ooflowoo34.github.io/Bootstrap-Project/" class="btn-web scroll-out" target="_blank">
+                    <h2 class="scroll-out-h2">BootStrap</h2>
+                    <p class="scroll-out-p">Showcase site using Bootstrap and keen-slider</p> 
+                </a>
             
+            <!-- Algo -->
+
+            <a id="algo" href="https://ooflowoo34.github.io/Bootstrap-Project/" class="btn-web scroll-out" target="_blank">
+                <h2 class="scroll-out-h2">Algo</h2>
+                <p class="scroll-out-p">Algorithmic and its translation in JS, JQ and PHP</p> 
+            </a>                 
+
+            <!-- CRUD -->
+
+            <a id="crud" href="https://ooflowoo34.github.io/Bootstrap-Project/" class="btn-web scroll-out" target="_blank">
+                <h2 class="scroll-out-h2">CRUD</h2>
+                <p class="scroll-out-p">Create, Read, Update and Delete using datatables</p> 
+            </a>             
         </div>
     </main>
+    <footer>
+        <div class="contacter">
+            <a  href="mailto:florian.batt@hotmail.fr?" class="btn"><span>Contacter par e-mail</span></a>
+            <a href ="sms:+33674142934" class="btn"><span>Contacter par SMS</span></a>
+        </div> 
+        <h1>Florian Batt <span class="text-little-grey"> - Web Developer</span></h1>
+    </footer>
     
 </body>
 </html>
