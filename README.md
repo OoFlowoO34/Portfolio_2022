@@ -1,7 +1,7 @@
 # Portfolio
 Compilation of my skills and my training
 
-## To improve:
+## To be improved:
 Use getBoundingClientRect() for the scroll effect
 
 ## To be added: 
