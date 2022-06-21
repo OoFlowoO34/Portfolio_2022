@@ -58,6 +58,32 @@ h2{
 .contacter > a{
     margin: 12px;
 }
+
+#description{
+    display: flex;
+    justify-content: center;
+
+}
+#description > div{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 7px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+border-radius: 100px; 
+background-color: white;
+}
+
+#description > div >:last-child{
+    padding: 0px 14px;
+}
+
+#description > div > img{
+    padding-left: 14px;
+    height: 28px;
+}
+
+
 #stocks{
     background-image: url("../images/Capture-crypto.png");
     background-repeat: no-repeat;
@@ -246,10 +272,13 @@ footer{
     transition: all ease-in-out 200ms;
 }
 
-
-
 #img-florian-batt{
     border-radius: 100%;
+}
+
+.icon{
+    height: 14px;
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -268,4 +297,10 @@ footer{
     #menu > a{
         width: 40%;
     }
+    #description{
+        display: flex;
+        justify-content: center;
+
+    }
+
 }

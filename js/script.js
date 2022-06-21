@@ -1,6 +1,14 @@
-window.addEventListener("scroll", ScrollColor);
-
+//Get Window Width
 let windowWidth = window.innerWidth;
+
+//CV Responsive
+let getCV = document.getElementById("cv");
+if (windowWidth < 768) {
+  getCV.href = "images/CV_Florian_Batt_phone.pdf";
+} else {
+  getCV.href = "images/CV_Florian_Batt.pdf";
+}
+
 //Stocks
 let getStocks = document.getElementById("stocks");
 let getStocksFirstChild = getStocks.firstElementChild;
@@ -22,6 +30,8 @@ let getCrudFirstChild = getCrud.firstElementChild;
 let getCrudLastChild = getCrud.lastElementChild;
 
 console.log(`Width:${windowWidth}`);
+
+window.addEventListener("scroll", ScrollColor);
 function ScrollColor() {
   console.log(window.scrollY);
 
