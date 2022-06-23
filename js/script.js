@@ -4,7 +4,7 @@ let windowWidth = window.innerWidth;
 //CV Responsive
 let getCV = document.getElementById("cv");
 if (windowWidth < 768) {
-  getCV.href = "images/CV_Florian_Batt_phone.pdf";
+  getCV.href = "images/CV_Florian_Batt_Phone.pdf";
 } else {
   getCV.href = "images/CV_Florian_Batt.pdf";
 }
