@@ -4,7 +4,7 @@ let windowWidth = window.innerWidth;
 //CV Responsive
 let getCV = document.getElementById("cv");
 if (windowWidth < 768) {
-  getCV.href = "images/CV_Florian_Batt_phone.pdf";
+  getCV.href = "images/CV_Florian_Batt_Phone.pdf";
 } else {
   getCV.href = "images/CV_Florian_Batt.pdf";
 }
@@ -36,7 +36,7 @@ function ScrollColor() {
   console.log(window.scrollY);
 
   //Stocks
-  if (window.scrollY > 150 && window.scrollY < 450 && windowWidth < 768) {
+  if (window.scrollY > 200 && window.scrollY < 500 && windowWidth < 768) {
     getStocks.classList.remove("scroll-out");
     getStocks.classList.add("scroll-in");
     getStocksFirstChild.classList.remove("scroll-out-h2");
@@ -52,7 +52,7 @@ function ScrollColor() {
     getStocksLastChild.classList.add("scroll-out-p");
   }
   //Bootstrap
-  if (window.scrollY > 450 && window.scrollY < 750 && windowWidth < 768) {
+  if (window.scrollY > 500 && window.scrollY < 800 && windowWidth < 768) {
     getBootstrap.classList.remove("scroll-out");
     getBootstrap.classList.add("scroll-in");
     getBootstrapFirstChild.classList.remove("scroll-out-h2");
@@ -68,7 +68,7 @@ function ScrollColor() {
     getBootstrapLastChild.classList.add("scroll-out-p");
   }
   //Algo
-  if (window.scrollY > 750 && window.scrollY < 1050 && windowWidth < 768) {
+  if (window.scrollY > 800 && window.scrollY < 1100 && windowWidth < 768) {
     getAlgo.classList.remove("scroll-out");
     getAlgo.classList.add("scroll-in");
     getAlgoFirstChild.classList.remove("scroll-out-h2");
@@ -84,7 +84,7 @@ function ScrollColor() {
     getAlgoLastChild.classList.add("scroll-out-p");
   }
   //CRUD
-  if (window.scrollY > 1050 && window.scrollY < 1350 && windowWidth < 768) {
+  if (window.scrollY > 1100 && window.scrollY < 1400 && windowWidth < 768) {
     getCrud.classList.remove("scroll-out");
     getCrud.classList.add("scroll-in");
     getCrudFirstChild.classList.remove("scroll-out-h2");

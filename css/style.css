@@ -48,16 +48,22 @@ h2{
    color: grey;
 }
 
-/* Mise en page */
 
-.contacter{
+/* Mise en page */
+#language{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#language > a{
+padding: 12px;
+}
+#contacter, #resume{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.contacter > a{
-    margin: 12px;
-}
+
 
 #description{
     display: flex;
@@ -124,31 +130,27 @@ border-radius: 100px;
     transition: all ease-in-out 200ms;
     border-radius: 10px 10px 0px 0px; 
 }
-
 header{
-    padding: 24px;
     background: linear-gradient(to bottom, rgba(196,196,196,1) 0%,rgba(196,196,196,0) 100%);
+}
+#florian{
+    padding: 0px 24px 24px 24px;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
 }
-header > *{
+#florian > *{
     padding: 12px;
 }
-footer > *{
-    padding: 12px;
-}
-footer{
-    padding: 24px;
-    background: linear-gradient(to top, rgba(196,196,196,1) 0%,rgba(196,196,196,0) 100%);
-    flex-direction: column;
+
+#btns-header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
+    flex-direction: column;
 }
+
+
 
 
 
@@ -210,6 +212,26 @@ footer{
     transition: all ease-in-out 200ms;
 }
 
+footer > div > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+}
+
+
+footer > *{
+    padding: 12px;
+}
+footer{
+    padding: 24px;
+    background: linear-gradient(to top, rgba(196,196,196,1) 0%,rgba(196,196,196,0) 100%);
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
 /* Style */
 
 .btn{
@@ -217,6 +239,11 @@ footer{
     border-radius: 10px;
     background-color:white;
     padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
     
 }
 .btn:hover{
@@ -283,7 +310,7 @@ footer{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    header{
+    #florian{
         flex-direction: row;
     }
     #menu{
