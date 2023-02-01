@@ -218,6 +218,16 @@ header{
     transition: all ease-in-out 200ms;
 }
 
+
+#ask:hover > p{
+    width: 100%;
+    background-color: #ebebebca;
+    position: absolute;
+    transform: translateY(99px);
+    opacity: 1;
+    transition: all ease-in-out 200ms;
+}
+
 footer > div > a{
     display: flex;
     flex-direction: row;
