@@ -114,6 +114,12 @@ border-radius: 100px;
     background-size:cover;
 }
 
+#ask{
+    background-image: url("../images/ask.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 .btn-web{
     border-radius: 10px;
 }
