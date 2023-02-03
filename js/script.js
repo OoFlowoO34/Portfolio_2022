@@ -9,6 +9,11 @@ if (windowWidth < 768) {
   getCV.href = "images/CV_Florian_Batt.pdf";
 }
 
+//Ask
+let getAsk = document.getElementById("ask");
+let getAskFirstChild = getAsk.firstElementChild;
+let getAskLastChild = getAsk.lastElementChild;
+
 //Stocks
 let getStocks = document.getElementById("stocks");
 let getStocksFirstChild = getStocks.firstElementChild;
@@ -35,8 +40,24 @@ window.addEventListener("scroll", ScrollColor);
 function ScrollColor() {
   console.log(window.scrollY);
 
-  //Stocks
+  //Ask
   if (window.scrollY > 200 && window.scrollY < 500 && windowWidth < 768) {
+    getAsk.classList.remove("scroll-out");
+    getAsk.classList.add("scroll-in");
+    getAskFirstChild.classList.remove("scroll-out-h2");
+    getAskFirstChild.classList.add("scroll-in-h2");
+    getAskLastChild.classList.remove("scroll-out-p");
+    getAskLastChild.classList.add("scroll-in-p");
+  } else {
+    getAsk.classList.remove("scroll-in");
+    getAsk.classList.add("scroll-out");
+    getAskFirstChild.classList.remove("scroll-in-h2");
+    getAskFirstChild.classList.add("scroll-out-h2");
+    getAskLastChild.classList.remove("scroll-in-p");
+    getAskLastChild.classList.add("scroll-out-p");
+  }
+  //Stocks
+  if (window.scrollY > 500 && window.scrollY < 800 && windowWidth < 768) {
     getStocks.classList.remove("scroll-out");
     getStocks.classList.add("scroll-in");
     getStocksFirstChild.classList.remove("scroll-out-h2");
@@ -52,7 +73,7 @@ function ScrollColor() {
     getStocksLastChild.classList.add("scroll-out-p");
   }
   //Bootstrap
-  if (window.scrollY > 500 && window.scrollY < 800 && windowWidth < 768) {
+  if (window.scrollY > 800 && window.scrollY < 1100 && windowWidth < 768) {
     getBootstrap.classList.remove("scroll-out");
     getBootstrap.classList.add("scroll-in");
     getBootstrapFirstChild.classList.remove("scroll-out-h2");
@@ -68,7 +89,7 @@ function ScrollColor() {
     getBootstrapLastChild.classList.add("scroll-out-p");
   }
   //Algo
-  if (window.scrollY > 800 && window.scrollY < 1100 && windowWidth < 768) {
+  if (window.scrollY > 1100 && window.scrollY < 1400 && windowWidth < 768) {
     getAlgo.classList.remove("scroll-out");
     getAlgo.classList.add("scroll-in");
     getAlgoFirstChild.classList.remove("scroll-out-h2");
@@ -84,7 +105,7 @@ function ScrollColor() {
     getAlgoLastChild.classList.add("scroll-out-p");
   }
   //CRUD
-  if (window.scrollY > 1100 && window.scrollY < 1400 && windowWidth < 768) {
+  if (window.scrollY > 1400 && window.scrollY < 1700 && windowWidth < 768) {
     getCrud.classList.remove("scroll-out");
     getCrud.classList.add("scroll-in");
     getCrudFirstChild.classList.remove("scroll-out-h2");
